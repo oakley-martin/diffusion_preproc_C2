@@ -1,0 +1,20 @@
+# Copy and paste whenever you open a new terminal so that the necessary tools are loaded.
+
+# MRtrix3 
+export PATH="/autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/mrtrix/3.0.3/bin:$PATH"
+
+# FSL
+FSLDIR=/usr/pubsw/packages/fsl/6.0.7.4
+. ${FSLDIR}/etc/fslconf/fsl.sh
+PATH=${FSLDIR}/bin:${PATH}
+export FSLDIR PATH
+
+# FreeSurfer
+export FREESURFER_HOME=/usr/local/freesurfer/8.0.0
+export FSFAST_HOME=/usr/local/freesurfer/8.0.0/fsfast
+export SUBJECTS_DIR=/usr/local/freesurfer/8.0.0/subjects
+export MNI_DIR=/usr/local/freesurfer/8.0.0/mni
+source $FREESURFER_HOME/SetUpFreeSurfer.sh
+ 
+# ANTS
+export ANTSPATH=/usr/pubsw/packages/ANTS/2.4.4/bin
