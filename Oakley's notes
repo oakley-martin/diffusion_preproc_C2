@@ -23,8 +23,8 @@ export ANTSPATH=/usr/pubsw/packages/ANTS/2.4.4/bin
 
 export FREESURFER_HOME=/usr/local/freesurfer/8.0.0
 export FSFAST_HOME=/usr/local/freesurfer/8.0.0/fsfast
-export SUBJECTS_DIR=/autofs/cluster/connectome2/Bay8_C2/bids/XXX/anat_process
+export SUBJECTS_DIR=/autofs/cluster/connectome2/Bay8_C2/bids/sub-msa00#x/anat_process
 export MNI_DIR=/usr/local/freesurfer/8.0.0/mni
 source $FREESURFER_HOME/SetUpFreeSurfer.sh
  
-/usr/local/freesurfer/8.0.0/bin/recon-all -subjid fs8 -i /autofs/cluster/connectome2/Bay8_C2/bids/sub-XXX/anat/sub-XXX_run-02_T1w.nii.gz -all
+/usr/local/freesurfer/8.0.0/bin/recon-all -subjid fs8 -i /autofs/cluster/connectome2/Bay8_C2/bids/sub-msa00#x/anat/sub-msa00#x_run-02_T1w.nii.gz -all
